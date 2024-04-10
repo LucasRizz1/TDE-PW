@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+    <!-- Importando CSS do Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado (opcional) -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header class="bg-dark text-white p-3">
+    <div class="container">
+        <h1>Meu Perfil</h1>
+        <nav>
+            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Perfil</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contato</button>
+                </li>
+              </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Perfil de Usuário -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagem-de-perfil.png" class="imagem-pequena" alt="Imagem de Perfil">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Usuário</h5>
+                        <p class="card-text">Email: 101767@aluno.uricer.edu.br</p>
+                        <p class="card-text">Telefone: (00) 12345-6789</p>
+                        <a href="#" class="btn btn-primary">Editar Perfil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <!-- Formulário de Edição -->
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="Telefone">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-white p-3">
+    <div class="container">
+        <p>&copy; 2024 Meu Site</p>
+    </div>
+</footer>
+
+<!-- Importando JavaScript do Bootstrap -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
